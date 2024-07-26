@@ -1,0 +1,94 @@
+
+html {
+    scroll-behavior: linear;
+}
+
+nav
+{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+}
+.homepage
+{
+    height: 100vh;
+}
+
+/*--------------------------------------------------------------Weather app --------------------------------------------------------*/ 
+
+.Weatherapp
+{
+
+    background-image: url(../images/weatherimg.webp);
+    background-size: cover;
+}
+
+.Weatherapp #search-bar {
+    padding: 5px 15px;
+    border: 1px solid #3199ab;
+    border-radius: 20px;
+}
+
+.Weatherapp .temp-card {
+    width: 32%;
+    border-radius: 8px;
+}
+
+.temp-card
+{
+    background-color: #83bbc4;
+    transition: all 0.3s;
+}
+
+.temp-card:hover
+{
+    background-color: #3199ab;
+    cursor: pointer;
+}
+
+.Weatherapp .temp-card .card-info{
+    background-color: #455a64;
+    color: #bfc1c8;
+    padding: 10px 25px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.temp-card .card-info p
+{
+    margin: 0
+}
+.Weatherapp .temp-card #location {
+    font-size: 22px;
+    text-shadow: 0 0 1px #fff,  0 0 1px #fff
+}
+
+.Weatherapp .temp-card .temp-datails {
+    padding: 25px;
+    color: #fff;
+}
+
+
+#today-description
+{
+    color:#000
+}
+
+.nextDay-description
+{
+    color:#000
+
+}
+/*--------------------------------------------------------- End weather app ------------------------------------------------------------*/ 
+
+
+
+
+/* -------------------------------------------------------------- Footer----------------------------------------------------------------*/ 
+footer {
+    background-color: #374850;
+    padding: 10px 0;
+}
+
+/* ----------------------------------------------------------- End Footer----------------------------------------------------------------*/ 
+
+
+

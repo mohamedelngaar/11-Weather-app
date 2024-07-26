@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <title>Abdelkader</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="p-3 d-flex justify-content-between w-100">
+        <a class="navbar-brand  ms-5 fs-5 fw-bolder" href="#">Weather</a>
+        <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto  mb-lg-0 " >
+            <li class="navbar1 fs-6">
+              <a class="nav-link active fw-bolder" aria-current="page" href="#home" >Home</a>
+            </li>
+            <li class="navbar1 fs-6">
+              <a class="nav-link fw-bolder active" href="#about">News</a>
+            </li>
+            <li class="navbar1 fs-6">
+              <a class="nav-link fw-bolder active" href="#services">Live Canvas</a>
+            </li>
+            <li class="navbar1 fs-6">
+              <a class="nav-link fw-bolder active" href="#portfolio">Photos</a>
+            </li>
+            <li class="navbar1 fs-6">
+              <a class="nav-link fw-bolder active" href="#clients">Contact</a>
+            </li>
+          </ul>
+       
+        </div>
+      </div>
+    </nav>
+    <!----------------------------------------------------------- Start Display Temp ------------------------------------------------------->
+    <section class="Weatherapp">
+      <div class="homepage py-5 container">
+        <div class="search m-auto">
+          <input type="text" id="search-bar" class="w-100 mb-5 p-3" placeholder="Enter city name"/>
+        </div>
+        <div class="city-temp d-flex justify-content-around">
+
+            <!-- Today's Card -->
+            <div class="temp-card">
+              <div class="card-info d-flex justify-content-between">
+                <p id="today">Firday</p>
+                <p id="todayDate">3 May</p>
+              </div>
+
+              <div class="temp-datails">
+                <p id="location"></p>
+                <div class="d-flex justify-content-between">
+                  <div class="pt-3">
+                    <h2 id="todayDegree" class="d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                  </div>
+                  <img id="todayIcon"  width="90"/>
+                </div>
+                <p id="today-description"></p>
+                <div class="details">
+                  
+                  <span id="humidty" class = "p-1"></span> <span>%</span>
+
+                  <span id="wind" class = "p-1"></span> <span>km/h</span>
+
+                  <span id="compass" class = "p-1"></span>
+                </div>
+              </div>
+            </div>
+
+            <!------------------------------------------------- Next Days Cards ------------------------------------------------------------>
+            <div class="temp-card text-center">
+              <div class="card-info">
+                <p class="nextDay">Saturday</p>
+              </div>
+
+              <div class="temp-datails">
+                <div>
+                  <img class="nextDayIcon" width="90"/>
+                </div>
+                <h2 class="maxDegree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                <br>
+                <p class="minDegree d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                <p class="nextDay-description"></p>
+              </div>
+            </div>
+
+            <div class="temp-card text-center">
+              <div class="card-info">
+                <p class="nextDay">Sunday</p>
+              </div>
+
+              <div class="temp-datails">
+                <div>
+                  <img class="nextDayIcon" width="90"/>
+                </div>
+                <h2 class="maxDegree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                <br>
+                <p class="minDegree d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                <p class="nextDay-description"></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--------------------------------------------------------------Footer-------------------------------------------------------------------->
+    <footer>
+      <div class="container">
+        <p class="text-center text-white m-2 p-3">All rights are reserved. Abdelkader</p>
+      </div>
+    </footer>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
